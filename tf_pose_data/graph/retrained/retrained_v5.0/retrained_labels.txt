@@ -1,0 +1,8 @@
+empty
+jumping
+jumping_jacks
+deleted
+boxing
+waving_2hands
+waving_1hand
+clapping_hands
