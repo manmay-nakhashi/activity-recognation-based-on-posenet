@@ -1,19 +1,15 @@
 
 # Multi-person Real-time Action Recognition Based-on Human Skeleton
+# Taken from https://github.com/felixchenfy/Realtime-Action-Recognition using posenet insted of openpose it runs very fast on cpu 
 
 ![](https://github.com/felixchenfy/Data-Storage/raw/master/EECS-433-Pattern-Recognition/recog_actions.gif)
 
 ![](https://github.com/felixchenfy/Data-Storage/raw/master/EECS-433-Pattern-Recognition/recog_actions2.gif)
-#Taken from https://github.com/felixchenfy/Realtime-Action-Recognition using posenet insted of openpose
-![](https://github.com/felixchenfy/Data-Storage/raw/master/EECS-433-Pattern-Recognition/recog_actions2.gif)
+
 **Highlights**: 
 9 actions; multiple people (<=5); Real-time and multi-frame based recognition algorithm.
 
 **Updates**: On 2019-10-26, I refactored the code; added more comments; and put all settings into the [config/config.yaml](config/config.yaml) file, including: classes of actions, input and output of each file, OpenPose settings, etc. 
-
-**Project**: This is my final project for EECS-433 Pattern Recognition in Northwestern Univeristy on March 2019. A simpler version where two teammates and I worked on is [here](https://github.com/ChengeYang/Human-Pose-Estimation-Benchmarking-and-Action-Recognition).
-
-**Warning:** Since I used the 10 fps video and 0.5s-window for training, you must also limit your video fps to be about 10 fps (7~12 fps) if you want to test my pretrained model on your own video or web camera. 
 
 **Contents:**
 - [1. Algorithm](#1-algorithm)
