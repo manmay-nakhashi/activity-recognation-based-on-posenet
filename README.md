@@ -220,15 +220,25 @@ python src/s5_test.py \
 ```
 
 ## Test on a folder of images
+For models based on sklearn
 ``` bash
 python src/s5_test.py \
+    -k False
     --model_path model/trained_classifier.pickle \
     --data_type folder \
     --data_path data_test/apple/ \
     --output_folder output
 ```
-
+For models based on keras
+``` bash
+python src/s5_test.py \
+    --model_path pose_classification.h5 \
+    --data_type folder \
+    --data_path data_test/apple/ \
+    --output_folder output
+```
 ## Test on web camera
+For models based on sklearn
 ``` bash
 python src/s5_test.py \
     -k False
@@ -237,7 +247,7 @@ python src/s5_test.py \
     --data_path 0 \
     --output_folder output
 ```
-
+For models based on keras
 ```
  CUDA_VISIBLE_DEVICES=-1 python3 src/s5_test.py 
  --model_path pose_classification.h5 
