@@ -231,12 +231,20 @@ python src/s5_test.py \
 ## Test on web camera
 ``` bash
 python src/s5_test.py \
+    -k False
     --model_path model/trained_classifier.pickle \
     --data_type webcam \
     --data_path 0 \
     --output_folder output
 ```
 
+```
+ CUDA_VISIBLE_DEVICES=-1 python3 src/s5_test.py 
+ --model_path pose_classification.h5 
+ --data_type webcam 
+ --data_path 0 
+ --output_folder output
+ ```
 # 5. Training data
 
 
